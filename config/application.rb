@@ -1,5 +1,7 @@
 require_relative "boot"
 
+import "bootstrap";
+
 require "rails"
 # Pick the frameworks you want:
 require "active_model/railtie"
