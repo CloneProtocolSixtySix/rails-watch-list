@@ -1,5 +1,4 @@
 class MoviesController < ApplicationController
-  def
-  @movies
+  def title
   end
 end
