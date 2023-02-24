@@ -1,12 +1,21 @@
 class ListsController < ApplicationController
   def index
-    @list = list.all
+    @lists = List.all
   end
 
   def show
+    @list = List.find(params[:id])
   end
 
   def new
-    @list = list.new
+    @list = List.new
   end
+
+  # def create
+    # @list = List.new(list_params)
+  # end
+
+  # def destroy
+    # @list = List.destroy
+  # end
 end
